@@ -9,4 +9,6 @@ public interface MainViewInterface {
     void displayData(List<ResultApi> resultApi);
     void showToast(String str);
     void displayError(String str);
+    void showProgressBar();
+    void hideProgressBar();
 }

@@ -52,7 +52,7 @@ public class MainPresenter implements MainPresenterInterface {
 
             @Override
             public void onComplete() {
-
+                mvi.hideProgressBar();
             }
         };
 

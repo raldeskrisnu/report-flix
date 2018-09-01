@@ -27,5 +27,4 @@ public class SplashScreen extends AppCompatActivity {
         RxView.clicks(btnMasuk).subscribe(o -> startActivity(new Intent(SplashScreen.this, MainActivity.class)));
     }
 
-
 }

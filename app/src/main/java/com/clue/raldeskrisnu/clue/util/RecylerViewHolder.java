@@ -2,10 +2,14 @@ package com.clue.raldeskrisnu.clue.util;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.clue.raldeskrisnu.clue.MainActivity;
 import com.clue.raldeskrisnu.clue.R;
+import com.jakewharton.rxbinding2.view.RxView;
 
 public class RecylerViewHolder extends RecyclerView.ViewHolder {
 
