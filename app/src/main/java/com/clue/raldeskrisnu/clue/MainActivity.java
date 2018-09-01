@@ -25,10 +25,10 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity implements MainViewInterface {
 
     @BindView(R.id.recyleview)
-    public RecyclerView recyleview;
+    RecyclerView recyleview;
 
     @BindView(R.id.progressBar)
-    public ProgressBar progressBar;
+    ProgressBar progressBar;
 
     private String TAG = "MainActivity";
 
@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity implements MainViewInterface
         mvpInit();
         setupViews();
         getMovieList();
-
     }
 
     private void mvpInit() {

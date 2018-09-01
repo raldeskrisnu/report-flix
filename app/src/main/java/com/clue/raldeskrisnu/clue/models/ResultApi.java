@@ -29,10 +29,6 @@ public class ResultApi {
     @Expose
     private Float lng;
 
-    @SerializedName("progress")
-    @Expose
-    private String progress;
-
     @SerializedName("image_url")
     @Expose
     private String imageUrl;
@@ -45,21 +41,16 @@ public class ResultApi {
     @Expose
     private String kelurahan;
 
-    @SerializedName("results")
-    @Expose
-    private List<ResultApi> results = null;
-
     public ResultApi() {
     }
 
-    public ResultApi(Integer id, Integer userId, String username, Float lat, Float lng, String progress, String imageUrl, String description, String kelurahan) {
+    public ResultApi(Integer id, Integer userId, String username, Float lat, Float lng, String imageUrl, String description, String kelurahan) {
         super();
         this.id = id;
         this.userId = userId;
         this.username = username;
         this.lat = lat;
         this.lng = lng;
-        this.progress = progress;
         this.imageUrl = imageUrl;
         this.description = description;
         this.kelurahan = kelurahan;
@@ -127,20 +118,5 @@ public class ResultApi {
 
     public void setKelurahan(String kelurahan) {
         this.kelurahan = kelurahan;
-    }
-
-    public String getProgress() {
-        return progress;
-    }
-
-    public void setProgress(String progress) {
-        this.progress = progress;
-    }
-
-    public List<ResultApi> getResults() {
-        return results;
-    }
-    public void setResults(List<ResultApi> results) {
-        this.results = results;
     }
 }
